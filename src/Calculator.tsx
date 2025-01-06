@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
-import styled from "styled-components";
 import { useCalculator } from "./use-calculator";
+import styled from "styled-components/native";
 
 const COLOR = {
   RESULT: "#4e4c51",
@@ -10,8 +10,16 @@ const COLOR = {
   NUM: "#5c5674",
 };
 
+interface buttonProps {
+  type: string;
+  text: string | number;
+  onPress: () => void;
+  flex: number;
+  isSelected?: boolean;
+}
+
 // Button type: 'reset' | 'operator' | 'num'
-const Button = ({ text, onPress, flex, type, isSelected }) => {
+const Button = ({ text, onPress, flex, type, isSelected }: buttonProps) => {
   const backgroundColor =
     type === "reset"
       ? COLOR.RESET
@@ -157,7 +165,7 @@ export default () => {
       </ButtonContainer>
       {/* [0 ~ =] */}
       <ButtonContainer>
-        <Button type="num" text="0" onPress={() => onPressNum(num)} flex={3} />
+        <Button type="num" text="0" onPress={() => onPressNum(0)} flex={3} />
         <Button
           type="operator"
           text="="
