@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+# MyCalculator: 계산기 앱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+## 프로젝트 소개
 
-1. Install dependencies
+> 이 프로젝트는 iOS 기본 계산기(Calculator)를 React Native와 Expo를 사용하여 클론 코딩한 앱입니다.
+iOS의 직관적인 UI와 동일한 디자인과 기능을 구현하며, React Native와 모바일 UI 개발에 대한 이해도를 높이는 것을 목표로 했습니다.
 
-   ```bash
-   npm install
-   ```
+## 기술 스택
 
-2. Start the app
+> `React Native`, `Typescript`, `Expo`
 
-   ```bash
-    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+## 주요 기능
+**기본 계산 기능**
+- 사칙연산 (+, -, ×, ÷)
+- 실시간 계산 결과 반영
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+**기타 기능**
+- AC(전체 초기화), ±(부호 변환), % 연산
+- 연산자 연속 입력 방지 및 계산 결과 유지
+- iOS 기본 계산기와 동일한 UI 및 버튼 인터랙션
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## 성과
+✅ iOS 기본 계산기와 거의 동일한 UI/UX 구현
 
-When you're ready, run:
+✅ React Native와 Expo를 활용한 모바일 앱 개발 경험 축적
 
-```bash
-npm run reset-project
-```
+✅ 상태 관리 없이도 UI 상태를 효과적으로 관리하는 방법 학습
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 배운 점
+- React Native UI 구성 및 스타일링: Flexbox를 활용한 반응형 레이아웃 설계
+- Expo 활용: Expo의 빠른 개발 환경과 배포 편리성 경험
+- 모바일 UI/UX 원칙: 터치 이벤트와 사용자 경험을 고려한 인터페이스 디자인
 
-## Learn more
+## 프로젝트 구성
+📌 **단일 화면**
+- 디스플레이 영역: 현재 입력 값 및 계산 결과 표시
+- 버튼 영역: 숫자 및 연산자 버튼 배치
+- 커스텀 버튼 컴포넌트: 일관된 버튼 디자인 적용
 
-To learn more about developing your project with Expo, look at the following resources:
+<img src="https://velog.velcdn.com/images/so2i/post/e78f2a5d-0b5c-4412-9544-4c57ce63fbf1/image.gif" width="50%" height="50%">
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
